@@ -1,0 +1,32 @@
+class Animal:
+    def __init__(self, species: str, name: str, age: int, illness: str):
+
+        assert type(species) == str, f"Species should be a string"
+        assert species.strip() != "", f"Species must be provided"
+        assert type(name) == str, f"Name should be a string"
+        assert name.strip() != "", f"A name must be provided"
+        assert type(age) == int, f"Age should be a integer"
+        assert age > 0, f"Age must be greater than 0"
+        assert type(illness) == str, f"Illness should be a string"
+        assert illness.strip() != "", f"Illness must be provided"
+
+        self.__species = species
+        self.__name = name
+        self.__age = age
+        self.__illness = illness
+
+    @property
+    def species(self):
+        return self.__species
+
+    @property
+    def name(self):
+        return self.__name
+    
+    @property
+    def age(self):
+        return self.__age
+
+    @property
+    def illness(self):
+        return self.__illness
