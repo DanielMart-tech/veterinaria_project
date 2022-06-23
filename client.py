@@ -4,10 +4,10 @@ import csv
 class Client:
     all = []
 
-    def __init__(self, name: str, idd_client: int, address: str, phone: str, email: str):
+    def __init__(self, name: str, idd_client: int, address: str, phone: str, email: str = None):
 
         assert len(name) >= 8, f"Name should be greater than 8 characters"
-        assert len(name) <= 16, f"Name should be greater than 8 characters"
+        assert len(name) <= 16, f"Name should be lesser than 16 characters"
         assert idd_client > 0, f"Id should be greater than 0"
         assert len(phone) > 0, f"Phone be greater than 0"
 
