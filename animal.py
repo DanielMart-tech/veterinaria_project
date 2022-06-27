@@ -10,7 +10,7 @@ class Animal:
         assert type(weight) == float, f"Weight must be a number"
         assert weight > 0, f"Weight must be greater than 0"
         assert type(height) == float, f"Height must be a number"
-        assert height > 0; f"Height must be greater than 0"
+        assert height > 0, f"Height must be greater than 0"
         assert type(illness) == str, f"Illness should be a string"
         assert illness.strip() != "", f"Illness must be provided"
 
